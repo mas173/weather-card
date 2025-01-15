@@ -1,0 +1,36 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather card</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ </head>
+ <body>
+  <div class="container">
+    <div class="top">
+<form action="">
+  <input type="text" placeholder="enter city...">
+  <button><i class='bx bx-search'></i></button>
+</form>
+
+    </div>
+    <div class="middle">
+      <img src="cloudy.gif" alt="">
+      <p class="temp">__°C</p>
+      <p class="weather">weather type</p>
+      <p class="city">city</p>
+
+    </div>
+    <div class="bottom">
+      <div class="humidity_box"> <i  class='bx bx-droplet' ></i><p class="humidity"><span id="value">__%</span> <span>Humidity</span></p></div>
+
+      <div class="wind_box"> <i class='bx bx-wind'></i> <p class="wind"><span id="speed">__kmph</span><span id="direction" >direction</span></p></div>
+    </div>
+    
+  </div>
+  
+  <script src="script.js"></script>
+ </body>
+ </html>

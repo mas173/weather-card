@@ -1,0 +1,341 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color:#d7d8ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  border-radius: 10px;
+  width: 90%;
+  height: 80%;
+  max-width: 600px;
+background: linear-gradient( rgb(173, 171, 171), #472E7A );
+  box-shadow: 5px 7px 15px ;
+
+}
+
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+
+margin-top: 30px;
+  
+}
+.top input{
+border: none;
+outline: none;
+border-radius: 20px;
+  height: 40px;
+  width: 400px;
+  padding-left: 20px;
+  font-size: 18px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+.top form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+input::placeholder{
+  padding-left: 20px;
+  font-size: 20px;
+}
+.top button{
+  margin-left: 10px;
+width:40px;
+height: 40px;
+border: none;
+outline: none;
+border-radius: 50%;
+}
+
+.middle{
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle img{
+  width: 50%;
+  mix-blend-mode:multiply;
+
+
+}
+
+.middle p {
+  margin: 10px;
+
+}
+
+.bottom{
+  margin-top: 30px;
+  
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.bottom .wind{
+  display: flex;
+  flex-direction: column;
+}
+
+.temp{
+  letter-spacing: 3px;
+  font-family: "Anton", serif;
+  font-size:60px ;
+  color: white;
+}
+.humidity{
+  display: flex;
+  flex-direction: column;
+}
+
+.humidity_box{
+  display: flex;
+  align-items: center;
+}
+.wind_box{
+  display: flex;
+  align-items: center;
+}
+
+.bottom  i{
+  font-size: 60px;
+  color: white;
+
+}
+.container i{
+  font-size: 30px;
+
+}
+
+p{
+  color: #d7d8ee;
+} 
+.bottom p {
+  margin-left: 10px;
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.city{
+  font-size: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.weather{
+  font-size: 30px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+ */
+
+
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #d7d8ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+  border-radius: 10px;
+  width: 90%;
+  height: 80%;
+  max-width: 600px;
+  background: linear-gradient(rgb(173, 171, 171), #472E7A);
+  box-shadow: 5px 7px 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 20px;
+}
+
+.top input {
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  height: 40px;
+  width: 70%;
+  max-width: 400px;
+  padding-left: 20px;
+  font-size: 16px;
+}
+
+.top form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: 16px;
+}
+
+.top button {
+  margin-left: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.middle img {
+  width: 50%;
+  max-width: 150px;
+  mix-blend-mode: multiply;
+}
+
+.middle p {
+  margin: 10px;
+  text-align: center;
+}
+
+.bottom {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.bottom .wind,
+.bottom .humidity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.temp {
+  letter-spacing: 3px;
+  font-family: "Anton", serif;
+  font-size: 40px;
+  color: white;
+}
+
+.humidity,
+.wind {
+  text-align: center;
+  color: #d7d8ee;
+}
+
+.humidity_box,
+.wind_box {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.bottom i {
+  font-size: 50px;
+  color: white;
+}
+
+.container i {
+  font-size: 25px;
+}
+
+p {
+  color: #d7d8ee;
+}
+
+.city,
+.weather {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .temp {
+    font-size: 30px;
+  }
+
+  .middle img {
+    width: 70%;
+  }
+
+  .top input {
+    width: 90%;
+  }
+
+  .bottom i {
+    font-size: 40px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .temp {
+    font-size: 24px;
+  }
+
+  .middle img {
+    width: 80%;
+  }
+
+  .top input {
+    font-size: 14px;
+  }
+
+  .bottom i {
+    font-size: 30px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 14px;
+  }
+}
+
